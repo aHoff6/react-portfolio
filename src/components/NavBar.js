@@ -1,18 +1,22 @@
+import { Link } from "react-router-dom";
+
 export default function NavBar() {
     return <nav className="navbar">
-        <a href="/" className="name">Anthony Hoffman</a>
+        <Link to="/" className="name">Anthony Hoffman</Link>
         <ul>
-            <li>
-                <li>
-                <a href="/about">About</a>
-                </li>
-                <li>
-                <a href="/mywork">My Work</a>
-                </li>
-                <li>
-                <a href="/contact">Contact</a>
-                </li>
-            </li>
+            <CustomTag to="/about">About</CustomTag>
+            <CustomTag to="/mywork">My Work</CustomTag>
+            <CustomTag to="/contact">Contact</CustomTag>
         </ul>
     </nav>
+}
+
+function CustomTag({ to, children, ...props }) {
+    return (
+        <li >
+            <Link to={to} {...props}>
+                {children}
+            </Link>
+        </li>
+    )
 }
