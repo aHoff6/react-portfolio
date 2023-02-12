@@ -6,9 +6,25 @@
     margin: 0;
   }
 
+  .picContainer {
+    /* margin-left: 20%; */
+  }
+
+  .myworkpics {
+    width: 500px;
+    height: 300px;
+    float: left;
+    width: 50%;
+    padding: 2px;
+  }
+
   .container {
     margin: 1rem;
     text-align: center;
+  }
+
+  .skillList {
+    list-style: none;
   }
   
   .name {
