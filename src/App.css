@@ -1,157 +1,187 @@
 * {
-    /* box-sizing: border-box; */
-    font-family: 'Roboto', sans-serif;
-   
-  }
-  
-  body {
-    margin: 0;
-    
-  }
-  
-
-
-
-  .sendbtn {
-    background-color: blue;
-    color: rgb(191, 201, 211);
-    border-radius: 4px;
-    border: none;
-    padding: 25px;
-    transition-duration: 0.4s;
-    
-  }
-
-  .sendbtn:hover {
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-    background-color: #4CAF50; /* Green */
-    color: white;
-    cursor: pointer;
-  }
-
-  .contactcontainer {
-    width: 500px;
-  }
-
-  .contactbox {
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    margin: 20px;
-    border: solid 3px rgb(21, 21, 25);
-    border-radius: 5px;
-    height: 450px;
-    background: #333;
-    color: white;
-    
-  }
-
-  input.contactbox:focus {
-    outline-width: 0;
-  }
-
-
-
-  .homepage-container {
-    display: flex;
-    align-content: flex-end;
-  }
-
-  .text-container {
-    display: flex;
-    
-  }
-
-  .changing-text {
-    display: flex;
-    font-size: 400%;
-    width: 600px;
-    height: 80px;
-    padding-left: 100px;
-  }
-
-  .profilepicContainer {
-    /* margin-left: 20%; */
-    /* display: flex; */
-    width: 400px;
-    height: 450px;
-  }
-
-  .profilepic {
-    /* max-width: 30%;
-    align-content: flex-start; */
-    border-radius: 20%;
-    width: 100%;
-    height: 100%;
-  }
-
-  .myworkpics {
-    width: 500px;
-    height: 300px;
-    /* padding: 2px; */
-  }
-
-  
-.workPicContainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  font-family: "Roboto", sans-serif;
 }
-  
+
+html {
+  /* background-color: #3f2f2f;
+  background-image: linear-gradient(0deg, #0d0747 0%, #666460 50%, #212121 90%); */
+  background-attachment: fixed !important;
     
+    background-image: -moz-linear-gradient(center top -90deg, #000000, #ffffff);
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#000000), to(#a1a2aa));
   
+}
 
-  .main-container {
-    text-align: center;
-    display: flex;
-    background-color: #000000;
-    background-image: linear-gradient(43deg, #000000 0%, #2f354a 30%, #78327f 66%);
-    padding-bottom: 300px;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .skillList {
-    list-style: none;
-  }
+body {
+  margin: 0;
   
-  .name {
-    font-size: 2.5rem;
+ 
+}
 
-  }
-  
-  .navbar {
-    background-color: #333;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 2rem;
-    padding: 0 1rem;
-  }
-  
-  .navbar ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    display: flex;
-    gap: 1rem;
-  }
+.sendbtn {
+  background-color: blue;
+  color: rgb(191, 201, 211);
+  border-radius: 4px;
+  border: none;
+  padding: 25px;
+  transition-duration: 0.4s;
+}
 
-  .navbar ul li {
-    display: inline-block;
-    margin-right: 1em;
-  }
-  
-  .navbar a {
-    color:  inherit;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    padding: .25rem;
-  }
+.sendbtn:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  background-color: #4caf50; /* Green */
+  color: white;
+  cursor: pointer;
+}
 
-    .menu:hover {
-    background-color: #777;
-    border-radius: 25%;
-  }
+.contactcontainer {
+  display: flex;
+  width: 500px;
+ 
+ flex-direction: column;
+}
+
+.contactbox {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin: 20px;
+  border: solid 3px rgb(21, 21, 25);
+  border-radius: 5px;
+  height: 450px;
+  background: #333;
+  color: white;
+  
+}
+
+input.contactbox:focus {
+  outline-width: 0;
+}
+
+.homepage-container {
+display: flex;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 550px;
+}
+
+.changing-text {
+  display: flex;
+  font-size: 400%;
+  height: 80px;
+  text-align: center;
+  text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.6);
+  padding-left: 100px;
+}
+
+.profilepicContainer {
+  display: flex;
+  
+  width: 400px;
+  height: 28%;
+
+}
+
+.slideshow-container {
+  display: flex;
+ max-width: 20%;
+ max-height: 20%;
+  
+}
+
+.profilepic {
+  /* max-width: 30%;
+    align-content: flex-start; */
+  border-radius: 20%;
+  width: 100%;
+  height: 100%;
+
+}
+
+.myworkpics {
+  width: 500px;
+  height: 300px;
+  /* padding: 2px; */
+}
+
+.workPicContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+.main-container {
+  text-align: center;
+  display: flex;
+  padding-top: 5%;
+  /* background-color: #000000;
+    background-image: linear-gradient(48deg, #000000 10%, #6d6d6d 58%, #f3ebf3 83%); */
+  
+  
+  /* padding-bottom: 200px; */
+  
+justify-content: center;
+}
+
+.skillList {
+  list-style: none;
+}
+
+.name {
+  font-size: 2.5rem;
+}
+
+/* -----Footer styling----- */
+
+.footerContainer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #333;
+  text-align: center;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 2.5 1rem;
+}
+
+.navbar ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar ul li {
+  display: inline-block;
+  margin-right: 1em;
+}
+
+.navbar a {
+  color: inherit;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding: .25rem;
+  
+}
+
+.menu:hover {
+  background-color: #777;
+  border-radius: 25%;
+}
