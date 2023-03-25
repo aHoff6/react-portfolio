@@ -37,9 +37,14 @@ body {
 
 .contactcontainer {
   display: flex;
-  width: 500px;
- 
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
  flex-direction: column;
+
+ 
+ 
+ 
 }
 
 .contactbox {
@@ -53,6 +58,8 @@ body {
   background: #333;
   color: white;
   
+  
+ 
 }
 
 input.contactbox:focus {
@@ -125,7 +132,7 @@ display: flex;
   
   /* padding-bottom: 200px; */
   
-justify-content: center;
+/* justify-content: center; */
 }
 
 .skillList {
