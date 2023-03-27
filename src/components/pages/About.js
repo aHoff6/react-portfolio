@@ -1,6 +1,6 @@
 export default function About() {
     return <div className="about-container">
-        <h1>About Anthony</h1>
+        <h1 className="title">About Anthony</h1>
         <p>Anthony is an aspiring web developer from New Jersey who is studying at Rutgers, currently working as an equipment technician for a golf course. </p>
         <p>Some skills I have learned during boot camp:</p>
         <ul className="skillList">

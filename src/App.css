@@ -7,17 +7,17 @@ html {
   background-image: linear-gradient(0deg, #0d0747 0%, #666460 50%, #212121 90%); */
   background-attachment: fixed !important;
     
-    background-image: -moz-linear-gradient(center top -90deg, #000000, #ffffff);
-    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#000000), to(#6d6d6d));
+
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 95%, from(#908f8f), to(#000000));
   
 }
 
 body {
   margin: 0;
-  
- 
 }
 
+
+/* -------------------------contact page style------------------------- */
 .sendbtn {
   background-color: blue;
   color: rgb(191, 201, 211);
@@ -41,63 +41,93 @@ body {
   margin-left: auto;
   margin-right: auto;
  flex-direction: column;
-
- 
- 
- 
 }
 
 .contactbox {
   display: flex;
   flex-direction: column;
   padding: 10px;
-  margin: 20px;
+  margin: 15px;
   border: solid 3px rgb(21, 21, 25);
   border-radius: 5px;
-  height: 450px;
-  background: #333;
+  background: rgb(67, 67, 67);
   color: white;
-  
-  
- 
+  height: auto;
 }
 
 input.contactbox:focus {
   outline-width: 0;
 }
 
+/* -------------------------homepage style------------------------- */
+
 .homepage-container {
 display: flex;
+position: fixed;
+margin-left: auto;
+margin-right: auto;
 }
 
 .text-container {
-  display: flex;
   flex-direction: column;
-  max-width: 550px;
+  max-width: 675px;
+  color: #adb7bd;
 }
 
 .changing-text {
   display: flex;
   font-size: 400%;
-  height: 80px;
+  height: 40px;
   text-align: center;
-  text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.6);
+  text-shadow: 5px 6px 6px rgba(0, 0, 0, 0.6);
   padding-left: 100px;
+
 }
 
 .profilepicContainer {
   display: flex;
-  
   width: 400px;
   height: 28%;
 
 }
 
-.slideshow-container {
+.slideshow-container-main {
   display: flex;
- max-width: 20%;
- max-height: 20%;
   
+}
+
+
+
+
+
+
+
+
+
+.slideshow-container {
+  position: relative;
+  
+}
+
+.slideshow-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slideshow-image.active {
+  opacity: 1;
+}
+
+.slideshow-image.inactive {
+  opacity: 0;
+}
+
+.slideshow-container img {
+max-width: 650px;
+border-radius: 20px;
 }
 
 .profilepic {
@@ -107,6 +137,7 @@ display: flex;
   width: 100%;
   height: 100%;
   margin-top: 60px;
+  min-height: 450px;
 }
 
 
@@ -118,6 +149,14 @@ display: flex;
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
+  color: #adb7bd
+}
+
+.title {
+  font-size: 300%;
+  text-decoration: underline black;
+  color: #b4b9bb;
+  text-shadow: 3px 3.5px 4px rgba(0, 0, 0, 0.6);
 }
 
 .myworkpics {
@@ -130,6 +169,7 @@ display: flex;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding-bottom: 160px;
 }
 
 

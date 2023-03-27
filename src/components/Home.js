@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import SlideShow from "./SlideShow";
 
 export default function Home() {
   const [loopNum, setLoopNum] = useState(0);
@@ -41,7 +42,6 @@ export default function Home() {
       clearInterval(ticker);
     };
   }, [text, delta, loopNum, isDeleting]);
-  
 
   return (
     <div className="homepage-container">
@@ -54,33 +54,10 @@ export default function Home() {
       </figure>
       <div className="text-container">
         <h2 className="changing-text">{text}</h2>
-      <figure className="slideshow-container">
-        <img
-          src={require("../components/assets/images/WDIWDpic.png")}
-          alt=""
-          />
-        {/* <img
-          src={require("../components/assets/images/weatherdashPic.png")}
-          alt=""
-        />
-        <img
-          src={require("../components/assets/images/MarketPlacepic.png")}
-          alt=""
-        />
-        <img
-          src={require("../components/assets/images/HrryPotterFanPage.png")}
-          alt=""
-          />
-          <img
-          src={require("../components/assets/images/dayplannerPic.png")}
-          alt=""
-          />
-          <img
-          src={require("../components/assets/images/notetakerhp.png")}
-          alt=""
-        /> */}
-      </figure>
-        </div>
+        <figure className="slideshow-container-main">
+          <SlideShow />
+        </figure>
+      </div>
     </div>
   );
 }
