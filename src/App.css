@@ -16,6 +16,25 @@ body {
   margin: 0;
 }
 
+.main-container {
+  text-align: center;
+  display: flex;
+  padding-top: 5%;
+  /* background-color: #000000;
+    background-image: linear-gradient(48deg, #000000 10%, #6d6d6d 58%, #f3ebf3 83%); */
+  
+  
+  /* padding-bottom: 200px; */
+  
+/* justify-content: center; */
+}
+
+.title {
+  font-size: 300%;
+  text-decoration: underline black;
+  color: #b4b9bb;
+  text-shadow: 3px 3.5px 4px rgba(0, 0, 0, 0.6);
+}
 
 /* -------------------------contact page style------------------------- */
 .sendbtn {
@@ -30,7 +49,7 @@ body {
 .sendbtn:hover {
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
     0 17px 50px 0 rgba(0, 0, 0, 0.19);
-  background-color: #4caf50; /* Green */
+  background-color: #4caf50; 
   color: white;
   cursor: pointer;
 }
@@ -152,12 +171,12 @@ border-radius: 20px;
   color: #adb7bd
 }
 
-.title {
-  font-size: 300%;
-  text-decoration: underline black;
-  color: #b4b9bb;
-  text-shadow: 3px 3.5px 4px rgba(0, 0, 0, 0.6);
+.skillList {
+  list-style: none;
 }
+
+
+/* -------------------------MyWork Page Style------------------------- */
 
 .myworkpics {
   width: 500px;
@@ -172,29 +191,50 @@ border-radius: 20px;
   padding-bottom: 160px;
 }
 
+.workimg {
+  position: relative;
+ 
+}
 
-.main-container {
-  text-align: center;
+.figcaption {
+  color: #b4b9bb;
+}
+
+.hoverbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  /* bottom: 0; */
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.6s ease;
+}
+
+.workimg:hover .hoverbox {
+  opacity: .9;
+  visibility: visible;
+  padding: 40px;
   display: flex;
-  padding-top: 5%;
-  /* background-color: #000000;
-    background-image: linear-gradient(48deg, #000000 10%, #6d6d6d 58%, #f3ebf3 83%); */
-  
-  
-  /* padding-bottom: 200px; */
-  
-/* justify-content: center; */
+  flex-direction: column;
+  background-color: rgb(197, 197, 197);
 }
 
-.skillList {
-  list-style: none;
+.hoverbutton {
+  display: flex;
+  /* width: 100%; */
+  margin-bottom: 47px;
+  margin-top: 40px;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  opacity: 1;
+  border-radius: 10px;
+  background-color: #000;
+  border: 2px solid rgb(34, 34, 34);
 }
 
-.name {
-  font-size: 2.5rem;
-}
-
-/* ------------------------Footer styling-------------------------- */
+/* ------------------------Footer/NavBar styling-------------------------- */
 
 .footerContainer {
   position: fixed;
@@ -204,6 +244,11 @@ border-radius: 20px;
   background-color: #333;
   text-align: center;
   color: white;
+  border-top: solid rgb(62, 62, 62) 4px;
+}
+
+.name {
+  font-size: 2.5rem;
 }
 
 .navbar {
@@ -216,6 +261,8 @@ border-radius: 20px;
   align-items: center;
   gap: 2rem;
   padding: 2.5 1rem;
+  z-index: 9999;
+  border-bottom: solid rgb(62, 62, 62) 4px;
 }
 
 .navbar ul {
@@ -240,7 +287,3 @@ border-radius: 20px;
   
 }
 
-.menu:hover {
-  background-color: #777;
-  border-radius: 25%;
-}

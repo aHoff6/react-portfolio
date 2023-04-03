@@ -1,64 +1,77 @@
 import React from "react";
 
 export default function MyWork() {
+  const projects = [
+    {
+      name: "Weather Dashboard",
+      imgSrc: require("../assets/images/weatherdashPic.png"),
+      alt: "Weather Dashboard",
+      deployedLink: "https://ahoff6.github.io/weather-dash/",
+      githubLink: "https://github.com/ahoff6/weather-dash",
+    },
+    {
+      name: "Harry Potter Fan Page",
+      imgSrc: require("../assets/images/HrryPotterFanPage.png"),
+      alt: "Harry Potter Fan Page",
+      deployedLink: "https://golemancer-ctrl.github.io/project-wikiview/",
+      githubLink: "https://github.com/golemancer-ctrl/project-wikiview",
+    },
+    {
+      name: "WDIWD",
+      imgSrc: require("../assets/images/WDIWDpic.png"),
+      alt: "WDIWD",
+      deployedLink: "https://wdiwd-app.herokuapp.com/",
+      githubLink: "https://github.com/ahoff6/wdiwd",
+    },
+    {
+      name: "Marketplace",
+      imgSrc: require("../assets/images/MarketPlacepic.png"),
+      alt: "Marketplace",
+      deployedLink: "https://whatever-marketplace.herokuapp.com/",
+      githubLink: "https://github.com/ahoff6/marketplace",
+    },
+    {
+      name: "Note Taker",
+      imgSrc: require("../assets/images/notetakerhp.png"),
+      alt: "Note Taker",
+      deployedLink: "https://young-falls-57358.herokuapp.com/",
+      githubLink: "https://github.com/ahoff6/note-taker",
+    },
+    {
+      name: "Password Generator",
+      imgSrc: require("../assets/images/passwordgeneratorPic.png"),
+      alt: "Password Generator",
+      deployedLink: "https://ahoff6.github.io/Password-Generator-Challenge/",
+      githubLink: "https://github.com/ahoff6/Password-Generator-Challenge",
+    },
+  ];
+
   return (
     <div>
       <h1 className="title">My Work</h1>
       <div className="workPicContainer">
-        <figure className="workimg">
-          <a href="https://ahoff6.github.io/weather-dash/">
-            <img
-              src={require("../assets/images/weatherdashPic.png")}
-              alt="weather dash"
-              className="myworkpics"
-            ></img>
-          </a>
-        </figure>
-        <figure className="workimg">
-          <a href="https://golemancer-ctrl.github.io/project-wikiview/">
-            <img
-              src={require("../assets/images/HrryPotterFanPage.png")}
-              alt="harry potter"
-              className="myworkpics"
-            ></img>
-          </a>
-        </figure>
-        <figure className="workimg">
-          <a href="https://wdiwd-app.herokuapp.com/">
-            <img
-              src={require("../assets/images/WDIWDpic.png")}
-              alt="wdiwd"
-              className="myworkpics"
-            ></img>
-          </a>
-        </figure>
-        <figure className="workimg">
-          <a href="https://whatever-marketplace.herokuapp.com/">
-            <img
-              src={require("../assets/images/MarketPlacepic.png")}
-              alt="marketplace"
-              className="myworkpics"
-            ></img>
-          </a>
-        </figure>
-        <figure className="workimg">
-          <a href="https://young-falls-57358.herokuapp.com/">
-            <img
-              src={require("../assets/images/notetakerhp.png")}
-              alt="notetaker"
-              className="myworkpics"
-            ></img>
-          </a>
-        </figure>
-        <figure className="workimg">
-          <a href="https://ahoff6.github.io/Password-Generator-Challenge/">
-            <img
-              src={require("../assets/images/passwordgeneratorPic.png")}
-              alt="passwordgenerator"
-              className="myworkpics"
-            ></img>
-          </a>
-        </figure>
+        {projects.map((project, index) => (
+          <figure key={index} className="workimg">
+            <a href={project.deployedLink}>
+              <img
+                src={project.imgSrc}
+                alt={project.alt}
+                className="myworkpics"
+              />
+            </a>
+            <figcaption className="figcaption">
+              <div className="hoverbox">
+                <a href={project.deployedLink} className="hoverbutton">
+                  View Deployed Site
+                </a>
+                <a href={project.githubLink} className="hoverbutton">
+                  View GitHub Repo
+                </a>
+              </div>
+              <div className="workTitle">{project.name}</div>
+            </figcaption>
+          </figure>
+        ))}
       </div>
     </div>
   );
