@@ -35,7 +35,7 @@ export default function MyWork() {
       imgSrc: require("../assets/images/notetakerhp.png"),
       alt: "Note Taker",
       deployedLink: "https://young-falls-57358.herokuapp.com/",
-      githubLink: "https://github.com/ahoff6/note-taker",
+      githubLink: "https://github.com/ahoff6/note-taker-challenge",
     },
     {
       name: "Password Generator",
