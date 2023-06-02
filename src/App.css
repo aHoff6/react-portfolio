@@ -52,12 +52,18 @@ body {
 
 .contactcontainer {
   display: flex;
-  width: 40%;
+  width: 35%;
   margin-left: auto;
   margin-right: auto;
  flex-direction: column;
+ padding-bottom: 100px;
 }
 
+.emailIntroText {
+  color: #ffffff;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
 .contactbox {
   display: flex;
   flex-direction: column;
@@ -65,13 +71,32 @@ body {
   margin: 15px;
   border: solid 3px rgb(21, 21, 25);
   border-radius: 5px;
-  background: rgb(67, 67, 67);
-  color: white;
+  background: rgba(67, 67, 67, 0.542);
+  color: rgb(255, 255, 255);
   height: auto;
 }
 
 input.contactbox:focus {
   outline-width: 0;
+}
+
+#contactLinkContainer {
+ flex: 1;
+}
+
+.linkH2 {
+  margin: 0;
+}
+
+.contactSpace {
+  width: 100px;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  font-size: x-large;
+  padding: space;
 }
 
 /* -------------------------homepage style------------------------- */
@@ -201,10 +226,10 @@ border-radius: 20px;
   padding: 0;
   padding-left: 30px;
   padding-right: 30px;
-  border-style: solid;
-  border-color: #000;
   list-style: none;
   color: #ffffff;
+  border: solid 3px rgb(21, 21, 25);
+  background-color: rgba(170, 170, 170, 0.17);
 }
 
 
