@@ -28,17 +28,16 @@ export default function About() {
         <li>HTML</li>
         <li>CSS</li>
         <li>JavaScript</li>
-        <li>APIs</li>
-        <li>NodeJS</li>
-        <li>OOP</li>
-        <li>Express</li>
-        <li>SQL</li>
-        <li>ORM</li>
-        <li>MVC</li>
-        <li>NoSQL</li>
+        <li>API Interactions</li>
+        <li>User Authentication</li>
+        <li>Node.js</li>
+        <li>Express.js</li>
+        <li>MySQL</li>
         <li>PWA</li>
-        <li>React</li>
-        <li>MERN</li>
+        <li>React.js</li>
+        <li>MERN Stack</li>
+        <li>Git</li>
+        <li>AJAX</li>
       </ul>
       </figure>
       </div>
