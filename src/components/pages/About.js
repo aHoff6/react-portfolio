@@ -22,7 +22,7 @@ export default function About() {
             Equipment Technician at a high end golf course, problem solving and
             troubleshooting are practiced daily. Overcoming an abundance of
             daunting challenges throughout my career gave me the confidence
-            needed to take on the bootcamp and focus on a new passion. 
+            needed to take on the bootcamp and focus on a new passion. Feel free to review my portfolio, resume, and contact me with any inquiries!
           </p>
 
           <ul className="skillList">
