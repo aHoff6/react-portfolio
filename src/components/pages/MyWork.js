@@ -48,7 +48,7 @@ export default function MyWork() {
 
   return (
     <div>
-      <h1 className="title">My Work</h1>
+      <h1 className="title">Portfolio</h1>
       <div className="workPicContainer">
         {projects.map((project, index) => (
           <figure key={index} className="workimg">
