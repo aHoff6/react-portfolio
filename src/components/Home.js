@@ -9,7 +9,7 @@ export default function Home() {
   const period = 1000;
 
   useEffect(() => {
-    const toRotate = ["Web Developer", "JavaScript", "HTML", "React", "CSS"];
+    const toRotate = ["BootStrap", "JavaScript", "HTML", "React", "CSS"];
 
     const tick = () => {
       const i = loopNum % toRotate.length;

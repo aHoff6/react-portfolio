@@ -21,14 +21,14 @@ export default function MyWork() {
       imgSrc: require("../assets/images/WDIWDpic.png"),
       alt: "WDIWD",
       deployedLink: "https://wdiwd-app.herokuapp.com/",
-      githubLink: "https://github.com/ahoff6/wdiwd",
+      githubLink: "https://github.com/cbinder705/TBD-WDIWD-",
     },
     {
       name: "Marketplace",
       imgSrc: require("../assets/images/MarketPlacepic.png"),
       alt: "Marketplace",
       deployedLink: "https://whatever-marketplace.herokuapp.com/",
-      githubLink: "https://github.com/ahoff6/marketplace",
+      githubLink: "https://github.com/djbalabis/FP-Marketplace-client",
     },
     {
       name: "Note Taker",

@@ -6,13 +6,8 @@
 }
 
 html {
-  /* background-color: #3f2f2f;
-  background-image: linear-gradient(0deg, #0d0747 0%, #666460 50%, #212121 90%); */
   background-attachment: fixed !important;
-    
-
   background-image: -webkit-gradient(linear, 0% 0%, 0% 95%, from(#908f8f), to(#000000));
-  
 }
 
 body {
@@ -127,32 +122,21 @@ margin-right: 20%;
 }
 
 .changing-text {
-  display: flex;
   font-size: 400%;
-  height: 40px;
+  width: 500px;
+  height: 80px;
+  overflow: hidden;
   padding-left: 70px;
   animation: shadow-pulse 2s infinite;
 }
 
 .profilepicContainer {
-  display: flex;
   width: 400px;
   height: 28%;
-
 }
 
 .slideshow-container-main {
-  display: flex;
-  
 }
-
-
-
-
-
-
-
-
 
 .slideshow-container {
   position: relative;
@@ -187,8 +171,6 @@ border-radius: 20px;
   margin-top: 60px;
   min-height: 450px;
 }
-
-
 
 /* ------------------------- About Page Style ------------------------ */
 
@@ -329,9 +311,6 @@ border-radius: 20px;
   font-size: 27px;
 }
 
-
-
-
 .name {
   font-size: 2.5rem;
 }
@@ -372,3 +351,4 @@ border-radius: 20px;
   
 }
 
+/* -------------Add Media query for mobile rendering------------- */

@@ -30,6 +30,7 @@ export default function About() {
             <li>HTML</li>
             <li>CSS</li>
             <li>JavaScript</li>
+            <li>Bootstrap</li>
             <li>API Interactions</li>
             <li>User Authentication</li>
             <li>Node.js</li>
