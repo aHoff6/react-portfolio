@@ -10,11 +10,11 @@ export default function MyWork() {
       githubLink: "https://github.com/ahoff6/weather-dash",
     },
     {
-      name: "Harry Potter Fan Page",
-      imgSrc: require("../assets/images/HrryPotterFanPage.png"),
-      alt: "Harry Potter Fan Page",
-      deployedLink: "https://golemancer-ctrl.github.io/project-wikiview/",
-      githubLink: "https://github.com/golemancer-ctrl/project-wikiview",
+      name: "Marketplace",
+      imgSrc: require("../assets/images/MarketPlacepic.png"),
+      alt: "Marketplace",
+      deployedLink: "https://whatever-marketplace.herokuapp.com/",
+      githubLink: "https://github.com/djbalabis/FP-Marketplace-client",
     },
     {
       name: "WDIWD",
@@ -24,11 +24,11 @@ export default function MyWork() {
       githubLink: "https://github.com/cbinder705/TBD-WDIWD-",
     },
     {
-      name: "Marketplace",
-      imgSrc: require("../assets/images/MarketPlacepic.png"),
-      alt: "Marketplace",
-      deployedLink: "https://whatever-marketplace.herokuapp.com/",
-      githubLink: "https://github.com/djbalabis/FP-Marketplace-client",
+      name: "Harry Potter Fan Page",
+      imgSrc: require("../assets/images/HrryPotterFanPage.png"),
+      alt: "Harry Potter Fan Page",
+      deployedLink: "https://golemancer-ctrl.github.io/project-wikiview/",
+      githubLink: "https://github.com/golemancer-ctrl/project-wikiview",
     },
     {
       name: "Note Taker",
