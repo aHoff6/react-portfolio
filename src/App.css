@@ -7,7 +7,13 @@
 
 html {
   background-attachment: fixed !important;
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 95%, from(#908f8f), to(#000000));
+  background-image: -webkit-gradient(
+    linear,
+    0% 0%,
+    0% 95%,
+    from(#908f8f),
+    to(#000000)
+  );
 }
 
 body {
@@ -40,7 +46,7 @@ body {
 .sendbtn:hover {
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
     0 17px 50px 0 rgba(0, 0, 0, 0.19);
-  background-color: #4caf50; 
+  background-color: #4caf50;
   color: white;
   cursor: pointer;
 }
@@ -50,8 +56,8 @@ body {
   width: 35%;
   margin-left: auto;
   margin-right: auto;
- flex-direction: column;
- padding-bottom: 100px;
+  flex-direction: column;
+  padding-bottom: 100px;
 }
 
 .emailIntroText {
@@ -76,7 +82,7 @@ input.contactbox:focus {
 }
 
 #contactLinkContainer {
- flex: 1;
+  flex: 1;
 }
 
 .linkH2 {
@@ -97,10 +103,10 @@ input.contactbox:focus {
 /* -------------------------homepage style------------------------- */
 
 .homepage-container {
-display: flex;
-position: fixed;
-margin-left: 5%;
-margin-right: 20%;
+  display: flex;
+  position: fixed;
+  margin-left: 5%;
+  margin-right: 20%;
 }
 
 .text-container {
@@ -114,10 +120,10 @@ margin-right: 20%;
     text-shadow: 0 0 3px rgb(255, 255, 255);
   }
   50% {
-    text-shadow: 0 0 10px #5c177e; 
+    text-shadow: 0 0 10px #5c177e;
   }
   100% {
-    text-shadow: 0 0 10px #1701c1; 
+    text-shadow: 0 0 10px #1701c1;
   }
 }
 
@@ -140,7 +146,6 @@ margin-right: 20%;
 
 .slideshow-container {
   position: relative;
-  
 }
 
 .slideshow-image {
@@ -160,8 +165,8 @@ margin-right: 20%;
 }
 
 .slideshow-container img {
-max-width: 650px;
-border-radius: 20px;
+  max-width: 650px;
+  border-radius: 20px;
 }
 
 .profilepic {
@@ -179,7 +184,7 @@ border-radius: 20px;
   flex-direction: column;
   justify-content: center;
   padding-right: 150px;
-  color: #adb7bd
+  color: #adb7bd;
 }
 
 #about-title {
@@ -188,22 +193,19 @@ border-radius: 20px;
 }
 
 .about-text {
- flex: 1;
- color: #ffffff; 
- padding-left: 20px;
- padding-right: 20px;
- font-size: large;
- text-align: left;
+  flex: 1;
+  color: #ffffff;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: large;
+  text-align: left;
 }
 
 .aside-container {
   display: flex;
-
-  
 }
 
 .aboutPic {
-  display: flex;
   width: 20%;
   height: 20%;
   padding-left: 150px;
@@ -224,14 +226,11 @@ border-radius: 20px;
   background-color: rgba(170, 170, 170, 0.17);
 }
 
-
-
 /* -------------------------MyWork Page Style------------------------- */
 
 .myworkpics {
   width: 500px;
   height: 300px;
-  
 }
 
 .workPicContainer {
@@ -243,7 +242,6 @@ border-radius: 20px;
 
 .workimg {
   position: relative;
- 
 }
 
 .figcaption {
@@ -262,7 +260,7 @@ border-radius: 20px;
 }
 
 .workimg:hover .hoverbox {
-  opacity: .9;
+  opacity: 0.9;
   visibility: visible;
   padding: 40px;
   display: flex;
@@ -347,8 +345,7 @@ border-radius: 20px;
   text-decoration: none;
   display: flex;
   align-items: center;
-  padding: .25rem;
-  
+  padding: 0.25rem;
 }
 
 .hamburger-menu {
@@ -356,7 +353,9 @@ border-radius: 20px;
   cursor: pointer;
 }
 
-.bar1, .bar2, .bar3 {
+.bar1,
+.bar2,
+.bar3 {
   width: 50px;
   height: 3px;
   margin: 5px;
@@ -366,7 +365,6 @@ border-radius: 20px;
 
 .open .bar1 {
   transform: rotate(45deg) translate(5px, 6px);
-  
 }
 
 .open .bar3 {
@@ -405,10 +403,10 @@ border-radius: 20px;
 }
 
 /* -----------------------Mobile rendering Media Queries---------------------  */
-@media (max-width: 768px) {
-
+@media screen and (max-width: 768px) {
+  /******** NavBar and hamburger menu ********/
   .name {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
   }
   .hamburger-menu {
     display: block;
@@ -424,17 +422,17 @@ border-radius: 20px;
     width: 100%;
     padding: 0;
     margin: 0;
-    height: 0; 
-    overflow: hidden; 
+    height: 0;
+    overflow: hidden;
   }
 
   .navbar.open .nav-links {
-    animation: expandLinks 0.4s ease forwards; 
+    animation: expandLinks 0.4s ease forwards;
   }
 
   @keyframes expandLinks {
     from {
-      height: 0; 
+      height: 0;
     }
     to {
       height: 230px;
@@ -449,6 +447,32 @@ border-radius: 20px;
     padding: 10px;
     color: white;
     text-decoration: none;
+  }
+
+  /*********** About page mobile ***********/
+#about-title {
+  padding-top: 20px;
+  font-size: 1.2rem;
+  text-align: center;
+  padding-left: 0;
+}
+
+.about-container {
+  padding-right: 0;
+}
+
+.aboutPic {
+  padding-left: 0;
+  width: 75%;
+}
+
+.skillList {
+  margin-bottom: 80px;
+  padding-bottom: 20px;
+}
+
+  .aside-container {
+    display: block;
   }
 }
 
