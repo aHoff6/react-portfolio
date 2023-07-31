@@ -36,7 +36,7 @@ const NavBar = () => {
         className={`hamburger-menu ${menuOpen ? "open" : ""}`}
         onClick={handleMenuToggle}
         tabIndex={0}
-        onFocusOut={handleFocusOut}
+        onFocus={handleFocusOut}
       >
         <div className={`bar1 ${menuOpen ? "open" : ""}`}></div>
         <div className={`bar2 ${menuOpen ? "open" : ""}`}></div>

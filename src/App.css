@@ -450,60 +450,82 @@ input.contactbox:focus {
   }
 
   /*********** About page mobile ***********/
-#about-title {
-  padding-top: 40px;
-  font-size: 1.4rem;
-  text-align: center;
-  padding-left: 0;
-}
+  #about-title {
+    padding-top: 40px;
+    font-size: 1.4rem;
+    text-align: center;
+    padding-left: 0;
+  }
 
-.about-container {
-  padding-right: 0;
-}
+  .about-container {
+    padding-right: 0;
+  }
 
-.aboutPic {
-  padding-left: 0;
-  width: 75%;
-}
+  .aboutPic {
+    padding-left: 0;
+    width: 75%;
+  }
 
-.skillList {
-  margin-bottom: 80px;
-  padding-bottom: 20px;
-}
+  .skillList {
+    margin-bottom: 80px;
+    padding-bottom: 20px;
+  }
 
   .aside-container {
     display: block;
   }
-}
 
-/*********** Portfolio page mobile ***********/
-.title {
-  font-size: 1.4rem;
-  padding-top: 40px;
-}
-.myworkpics {
-  width: 100%;
-  height: 100%;
-}
+  /*********** Portfolio page mobile ***********/
+  .title {
+    font-size: 1.4rem;
+    padding-top: 40px;
+  }
+  .myworkpics {
+    width: 100%;
+    height: 100%;
+  }
 
-/*********** Contact page mobile ***********/
-.contactcontainer {
-  width: 100%;
+  /*********** Contact page mobile ***********/
+  .contactcontainer {
+    width: 100%;
+  }
+
+  .emailContainer {
+    margin-top: 30px;
+  }
+
+  .contact-links {
+    font-size: 1rem;
+  }
+
+  .icons {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+  }
+
+  /*********** Footer mobile ***********/
+  .iconContainer {
+    padding-left: 0;
+  }
+
+  /* ********** Homepage mobile ***********/
+  .profilepicContainer {
+    display: none;
+  }
+
+  .slideshow-container-main {
+  }
+  .slideshow-container {
+  }
+  .slideshow-image {
+    width: 70%;
+  }
+  .text-container {
+    text-align: start;
+  }
+  .homepage-container {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
-
-.emailContainer {
-  margin-top: 30px; 
-}
-
-.contact-links {
-  font-size: 1rem;
-  
-}
-
-.icons {
-  display: flex;
-  justify-content: space-evenly;
-  margin-top: 20px;
-}
-
-
